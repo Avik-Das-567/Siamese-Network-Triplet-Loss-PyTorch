@@ -21,6 +21,12 @@ $$
 d(A, P) + \text{margin} < d(A, N)
 $$
 
+where:
+
+$$
+d(x, y) = \|f(x) - f(y)\|
+$$
+
 This formulation is widely used in:
 
 - Face recognition  
