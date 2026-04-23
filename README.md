@@ -1,10 +1,8 @@
-# 🧠 Siamese Network with Triplet Loss for Person Re-Identification (PyTorch)
+# Siamese Network with Triplet Loss for Person Re-Identification using PyTorch
 
 This project implements a **Siamese Neural Network** trained with **Triplet Loss** to learn discriminative feature embeddings for **person re-identification**. The model maps visually similar inputs closer in embedding space while pushing dissimilar samples farther apart, enabling robust similarity-based matching.
 
----
-
-## 📌 Overview
+## Overview
 
 Siamese Networks are designed to learn **relative similarity** rather than direct classification. Instead of predicting class labels, the network learns an embedding function such that:
 
@@ -29,18 +27,14 @@ This formulation is widely used in:
 - Signature verification  
 - Person re-identification  
 
----
-
-## 🎯 Objectives
+## Objectives
 
 - Learn embedding representations using **Triplet Loss**
 - Implement a complete **Siamese training pipeline in PyTorch**
 - Construct and utilize **Anchor–Positive–Negative (APN)** triplets
 - Train a model for **distance-based identity matching**
 
----
-
-## 🧩 Methodology
+## Methodology
 
 ### 1. Data Preparation
 
@@ -56,8 +50,6 @@ Key aspects:
 - Randomized selection for variability  
 - Balanced exposure to positive and negative samples  
 
----
-
 ### 2. Triplet Dataset Construction
 
 A custom dataset class:
@@ -67,8 +59,6 @@ A custom dataset class:
 - Applies transformations (resize, normalization, tensor conversion)  
 
 This enables learning of **intra-class compactness** and **inter-class separation**.
-
----
 
 ### 3. Model Architecture
 
@@ -82,8 +72,6 @@ Key properties:
 - **Weight sharing** across all inputs  
 - Produces **fixed-length embeddings**  
 - Optimized for **distance-based comparison**  
-
----
 
 ### 4. Embedding Learning
 
@@ -100,8 +88,6 @@ The objective:
 - Maximize: $$\|f(A) - f(N)\|$$
 
 This transforms the problem into **metric learning**.
-
----
 
 ### 5. Triplet Loss Function
 
@@ -121,8 +107,6 @@ This encourages:
 - Compact clusters for same identities  
 - Clear separation for different identities  
 
----
-
 ### 6. Training Pipeline
 
 The training process includes:
@@ -139,8 +123,6 @@ Important aspects:
 - Stable optimization with margin tuning  
 - Efficient computation using GPU (if available)  
 
----
-
 ### 7. Model Behavior After Training
 
 After training, the model:
@@ -156,9 +138,7 @@ This supports:
 - Image retrieval  
 - Similarity ranking  
 
----
-
-## 🔄 Project Workflow
+## Project Workflow
 
 ```
 Raw Image Dataset
@@ -182,18 +162,14 @@ Trained Embedding Space
 Similarity-Based Inference
 ```
 
----
-
-## 📊 Key Characteristics
+## Key Characteristics
 
 - **Metric learning framework** instead of classification  
 - **Shared-weight architecture**  
 - **Triplet-based supervision**  
 - Generalizes to unseen identities  
 
----
-
-## 🧠 Applications
+## Applications
 
 - Person re-identification  
 - Face verification  
@@ -201,17 +177,13 @@ Similarity-Based Inference
 - Duplicate detection  
 - Signature verification  
 
----
-
-## ⚙️ Technologies Used
+## Technologies Used
 
 - **PyTorch** — model development and training  
 - **Torchvision** — preprocessing and transforms  
 - **NumPy / PIL** — data handling  
 - **Matplotlib** — visualization  
 
----
-
-## 🏁 Summary
+## Summary
 
 This project presents a full implementation of a **Siamese Network trained with Triplet Loss**, focusing on learning meaningful feature embeddings for similarity-based tasks. By shifting from classification to metric learning, the model becomes more flexible and effective for real-world identity matching problems.
