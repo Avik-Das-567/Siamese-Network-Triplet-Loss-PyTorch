@@ -24,7 +24,7 @@ $$
 where:
 
 $$
-d(x, y) = \|f(x) - f(y)\|
+d(x, y) = |f(x) - f(y)|
 $$
 
 This formulation is widely used in:
