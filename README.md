@@ -164,10 +164,10 @@ Similarity-Based Inference
 
 ## Key Characteristics
 
-- **Metric learning framework** instead of classification  
-- **Shared-weight architecture**  
-- **Triplet-based supervision**  
-- Generalizes to unseen identities  
+- Learns a distance metric instead of explicit class boundaries
+- Shared-weight architecture ensures consistent feature extraction
+- Triplet-based supervision improves generalization to unseen identities
+- Decouples training identities from inference identities
 
 ## Applications
 
