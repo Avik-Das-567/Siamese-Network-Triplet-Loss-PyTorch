@@ -83,9 +83,9 @@ $$
 
 The objective:
 
-- Minimize: ||f(A) − f(P)||
+- Minimize: $$‖f(A) − f(P)‖$$
 
-- Maximize: ||f(A) − f(N)||
+- Maximize: $$‖f(A) − f(N)‖$$
 
 This transforms the problem into **metric learning**.
 
